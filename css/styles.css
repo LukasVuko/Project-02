@@ -7,12 +7,12 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: #222;
-    background: #f7f5f0;
+    color: rgb(65, 71, 88);
+    background: rgb(255, 255, 255);
   }
 
 img {
-    width: 90%;
+    width: 100%;
   }
 
 #profile-picture {
@@ -20,7 +20,6 @@ img {
 }
 
 .header-wrap {
-    padding-top: .3em;
     margin-bottom: 2em;
   }
 
@@ -36,10 +35,10 @@ img {
   }
 
   a {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
-    color: black;
+    color: inherit;
   }
 
   h1 {
@@ -47,7 +46,55 @@ img {
   }
 
   header {
-      margin-bottom: 3em;
       padding-bottom: 1em;
-      background-color: rgb(197, 98, 98);
+      background-color: rgb(250, 250, 250)
   }
+
+  p {
+    line-height: 1.5;
+  }
+
+.container {
+    padding: 1em;
+}
+
+.wrapper {
+    padding-bottom: 1.8em;
+}
+
+
+h2 {
+    padding: 1.6em 0;
+    font-size: 1em;
+}
+
+h3 {
+    padding-top: .5em;
+}
+
+footer {
+    background-color: rgb(250, 250, 250);
+}
+
+#footer-split{
+    border-bottom: 2px rgb(237, 237, 237) solid;
+    padding-bottom: 3em;
+}
+
+h4 {
+    display: inline-block;
+}
+
+.h4-left {
+    float: left;
+}
+
+.h4-right {
+    float: right;
+}
+
+.clearfix::after {
+	Content: "";
+	Display: table;
+    Clear: both;
+}
