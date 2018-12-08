@@ -48,10 +48,15 @@ footer {
     background-color: rgb(250, 250, 250);
 }
 
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 
 /* Nav Bar Settings */
 
-a {
+.main-nav a {
     background-color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
@@ -104,3 +109,46 @@ a {
 #profile-picture {
     width: 60%;
 }
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .main-nav a {
+        background-color: initial;
+        padding: 0 1.5em;
+    }
+
+    #profile-picture {
+        float: right;
+        width: 38%;
+        margin-left: 1.3em;
+    }
+
+    #about-header {
+        text-align: left;
+    }
+
+    .container {
+        padding: 1.5em;
+    }
+
+    img {
+        width: 95%;
+    }
+    .wrapper {
+        display: inline-block;
+        width: 50%;
+        margin-left: -4px;
+        vertical-align: top;
+    }
+
+    p {
+        padding: 0 1em;
+    }
+}
+
+
