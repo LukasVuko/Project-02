@@ -10,7 +10,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(65, 71, 88);
-    background: rgb(255, 255, 255);
+    background: #FEDCD2;
 }
 
 img {
@@ -23,7 +23,7 @@ h1 {
 
 header {
     padding-bottom: 1em;
-    background-color: rgb(250, 250, 250)
+    background-color: rgb(250, 250, 250);
 }
 
 p {
@@ -53,6 +53,11 @@ a {
     display: block;
     text-decoration: none;
     color: inherit;
+}
+
+.bottom-footer {
+    color:#FEDCD2;
+    text-shadow: 3px 3px 18px #000000;
 }
 
 /* Nav Bar Settings */
@@ -186,6 +191,40 @@ a {
 
     .header-wrap {
         vertical-align: bottom;
+    }
+
+    body {
+        background-color: rgb(250, 250, 250);
+    }
+    .large-main-container {
+        margin: 1em;
+        background-color: #FEDCD2;
+    }
+
+    .wrapper {
+        width: 33.2%;
+        margin-left: -4px;
+    }
+
+    #profile-picture {
+        padding-right: 2em;
+    }
+
+    .footer-right a {
+        padding: 0 .8em;
+    }
+    h1 {
+        padding-left: 1.2em;
+    }
+
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
