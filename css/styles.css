@@ -33,6 +33,7 @@ p {
 h2 {
     padding: 1.6em 0;
     font-size: 1em;
+    margin-top: 0;
 }
 
 h3 {
@@ -112,14 +113,23 @@ a {
 
 /* Media Queries */
 
+@media (max-width: 767px) {
+    .eliminate-small {
+        display: none;
+    }
+}
 @media (min-width: 768px) {
+    .eliminate-other {
+        display: none;
+    }
     .main-nav li {
         display: inline-block;
     }
 
     .main-nav a {
         background-color: initial;
-        padding: 0 1.5em;
+        padding: 0 .5em;
+        margin: 0 1em;
     }
 
     #profile-picture {
@@ -146,9 +156,36 @@ a {
         vertical-align: top;
     }
 
+    #footer-split {
+        padding-bottom: 2em;
+    }
+    #footer-note{
+        padding: 0 11em;
+    }
     p {
-        padding: 0 1em;
+        padding: 0 2.3em;
+    }
+
+    .footer-right {
+        float: right;
+    }
+
+    .footer-right a {
+        padding: 0 .8em 3em .8em;
     }
 }
 
+@media (min-width: 1024px) {
+    h1 {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .header-wrap {
+        vertical-align: bottom;
+    }
+}
 
